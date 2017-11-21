@@ -55,6 +55,7 @@ case $1 in
       --enable-doxygen=no \
       --enable-dot=no \
       --enable-shared=no \
+      --host=x86_64-apple-darwin13 \
       --prefix=${INSTALL_DIR}
     CXXFLAGS="${COPASI_CXXFLAGS}" CFLAGS="${COPASI_CFLAGS}" LDFLAGS="${COPASI_LDFLAGS}" make 
     CXXFLAGS="${COPASI_CXXFLAGS}" CFLAGS="${COPASI_CFLAGS}" LDFLAGS="${COPASI_LDFLAGS}" make install
