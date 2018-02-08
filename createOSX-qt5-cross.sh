@@ -221,6 +221,7 @@ case $1 in
        -DWITH_QT_FILESYSTEM=ON \
        -DCOMBINE_DEPENDENCY_DIR=${INSTALL_DIR} \
        -DEXTRA_LIBS=${INSTALL_DIR}/lib/libexpat.a \
+       -DLIBSBML_INCLUDE_DIR=${INSTALL_DIR}/include \
         $DIRECTORY/src/libCombine
     $MAKE -j 4
     $MAKE install
